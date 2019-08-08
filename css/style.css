@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: chartreuse;
+}
+
+
+#container{
+    position: relative;
+    width: 1000px;
+    height: 18000px;
+    background: black;
+    margin: 0 auto;
+}
