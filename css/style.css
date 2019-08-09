@@ -3,15 +3,50 @@
     padding: 0px;
 }
 
-body{
-    background: chartreuse;
+div.container-fluid{
+    padding: 0;
 }
 
-
-#container{
+#menu{
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 1px 1px 8px 0px #ccc;
     position: relative;
-    width: 1000px;
-    height: 18000px;
-    background: black;
-    margin: 0 auto;
 }
+
+#menu div.container{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+#butao_menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+}
+
+#butao_menu:focus{
+    outline: none;
+}
+
+#butao_menu img{
+   width: 60%;
+}
+
+a.brand{    
+    padding: 3px;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Arial';
+    color: #3e3e3e;
+}
+
+a.brand:hover{
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+
+
