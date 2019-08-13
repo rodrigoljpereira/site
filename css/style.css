@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+div.row{
+    margin-left:0;
+    margin-right: 0;
+    padding: 0;
+}
+
 body{
     background-color:#ccc;
 }
@@ -159,6 +165,51 @@ a.brand:hover{
 
 .galeria img{
     width: 100%;
+}
+
+/*SECTION DREAM HOUSE*/
+#dreamHouse{
+    padding: 2em 0;
+    
+}
+
+#dreamHouse h2{
+    margin: 0 auto;
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top:1em;
+    color: #6b8549;
+}
+
+#dreamHouse .sessao-dream-house{
+    color: #c09635;
+    background-color: #34421e;    
+}
+
+#dreamHouse .sessao-dream-house img{
+    width: 100%;
+}
+
+#dreamHouse .sessao-conteudo{
+    display: flex;
+    align-self: center; 
+    
+}
+
+#dreamHouse .sessao-conteudo div{
+    padding: 50px;   
+}
+
+#dreamHouse .sessao-conteudo h3{
+    font-size: 2.5em;
+    line-height: 1.5;
+}
+
+a.leiaMais{
+    border-bottom: 1.5px solid #c09635;
+    line-height: 1.5em;
+    padding-bottom: 8px;
+    cursor: pointer;
 }
 
 
