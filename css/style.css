@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body{
+    background-color:#ccc;
+}
+
 div.container-fluid{
     padding: 0;
 }
@@ -12,12 +16,13 @@ div.container-fluid{
     padding: 10px 0;
     box-shadow: 1px 1px 8px 0px #ccc;
     position: relative;
+    z-index: 1;
 }
 
 #menu div.container{
     display: flex;
     justify-content: space-between;
-    
+   
     
 }
 
@@ -46,6 +51,127 @@ a.brand{
 a.brand:hover{
     text-decoration: none;
     color: #3e3e3e;
+}
+
+.fundo-menu{
+    background-color: #000;
+    opacity: 0.8;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+
+.menu-list{
+    background-color: #000;
+    height: 100vh;
+    z-index: 999;
+    color: #fff;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left:-20%;
+}
+
+#fechar{
+    margin-top: 10px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.menu-list ul{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.menu-list ul li{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    border: solid white 1px;
+}
+
+.menu-list ul li a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu-list ul li a:hover{
+  text-decoration: none;
+}
+
+#primeira-sessao{
+    height: 70vh;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    background-image: url(../img/01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#primeira-sessao .container{
+    position:relative;
+}
+
+#primeira-sessao .descricao{
+    width: 50%;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+#primeira-sessao .descricao h1{
+    font-size: 6em;
+    text-align: right;
+    color: #fff;
+    line-height: 1em;
+}
+
+#primeira-sessao .descricao p{
+    font-size: 1em;
+    text-align: right;
+    margin: 30px 0 40px;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 500;
+}
+
+#section-galeria{
+    background-color: #34421e;
+    position: relative;
+}
+
+.galeria{
+    padding: 40px;
+}
+
+
+.galeria img{
+    width: 100%;
+}
+
+
+@media(min-width: 992px) and (max-width: 1440px){
+    #primeira-sessao .descricao h1{
+        font-size: 5em;
+        padding-left: 20%;
+    }
+
+    #primeira-sessao .descricao{
+        top: 120px;
+    }
+    
 }
 
 

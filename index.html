@@ -22,10 +22,50 @@
     </header>
     
 
-    
-    
+    <div class="container-fluid fundo-menu"></div>
+    <div class="container-fluid">
+        <div class="menu-list">
+            <p id="fechar">X</p>
+            <ul>
+                <li><a href="#">item 01</a></li>
+                <li><a href="#">item 02</a></li>
+                <li><a href="#">item 03</a></li>
+                <li><a href="#">item 04</a></li>
+            </ul>
+        </div>
+    </div>
 
+    <section>
+        <div class="container-fluid" id="primeira-sessao">
+            <div class="container">
+                <div class="descricao col-lg-6">
+                    <h1>REAL ESTATE AGENCY</h1>
 
+                    <p>Villa G is located in Kaunas, Lithuania and is seated on the river bank of its largest river Nemunas. 
+                       The river offers an exceptional view from the house, however, it is facing the North side of the site while the street is on the South.</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container-fluid p-0" id="section-galeria">
+            <div class="container galeria">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-4">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
    
 
     <script src="./vendor/Jquery/jquery.js"></script>
@@ -35,6 +75,36 @@
     <script src="./js/script.js"></script>
     <script>
         new WOW().init();
+
+        var botao = $('#butao_menu');
+        var fechar = $('#fechar');
+
+        botao.on('click', function(){
+           abrirMenu();    
+        });
+
+        fechar.on('click', function(){
+           fecharMenu();
+        });
+
+        $('.fundo-menu').on('click', function(){
+            fecharMenu();
+        });
+
+        function abrirMenu(){
+            $('.fundo-menu').fadeIn('slow');
+            $('.menu-list').animate({
+                "left":"0"
+            });   
+        }
+
+        function fecharMenu(){
+            $('.fundo-menu').fadeOut('slow'); 
+            $('.menu-list').animate({
+                "left":"-20%"
+            });
+        }
+
     </script>
 
 </body>
