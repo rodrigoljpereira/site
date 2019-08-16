@@ -212,6 +212,94 @@ a.leiaMais{
     cursor: pointer;
 }
 
+/*section what-we*/
+.what-we{
+    background-color: #c09635;
+    padding: 3em !important;
+}
+
+.sessao-what-we{
+    background-color:#fff;
+}
+
+.sessao-what-we div img{
+    width: 100%;
+
+}
+
+.what-we-conteudo{
+    display: flex;
+    align-self: center; 
+    
+}
+
+.what-we-conteudo div{
+    padding: 50px;   
+}
+
+.what-we-conteudo h3{
+    font-size: 2.5em;
+    line-height: 1.5;
+    color:#34421e;
+    font-weight: 700;
+}
+
+
+.what-we-conteudo p{
+    color:#34421e;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+/*SECTION ICONES*/
+
+section#icones .container-fluid{
+    background-color: #34421e;
+    
+}
+
+section#icones .container{
+    padding: 6em 0;
+}
+
+
+.icones{
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+}
+
+.icones i{
+    font-size: 5em;
+    color: #fff;
+    margin: 20px 0
+}
+
+.icones h4{
+    color: #fff;
+    font-size: 2em;
+}
+
+/*practicing*/
+#practicing{
+    background-color: #ccc;
+}
+
+#practicing .container{
+    padding:6em 0;
+}
+
+#practicing .container p{
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+
+
+
+
 
 @media(min-width: 992px) and (max-width: 1440px){
     #primeira-sessao .descricao h1{
