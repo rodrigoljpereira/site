@@ -26,10 +26,28 @@ $(document).ready(function(){
 
     function fecharMenu(){
         $('.fundo-menu').fadeOut('slow'); 
-        $('body').css('overflow','scroll');
+        $('body').css('overflow','visible');
         $('.menu-list').animate({
             "left":"-20%"
         });
     }
+
+    var image = $('#section-galeria img');
+    image.on('click', function(){
+        var atributo = $(this).attr('src');
+        var modaImagem =  $('.modal-header img');   
+        modaImagem.attr('src', atributo);     
+        $('.modal').fadeIn('ease'); 
+        //$('body').css('overflow','hidden');       
+    });
+    
+    $('.fechar-modal').on('click', function(){
+        $('.modal').fadeOut('ease'); 
+        //$('body').css('overflow','scroll'); 
+    });
+
+
+ 
+    
 })
 

@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+.opacidade{
+    opacity: .5;
+    transition: all .4s ease-in;  
+}
+
 div.row{
     margin-left:0;
     margin-right: 0;
@@ -165,6 +170,12 @@ a.brand:hover{
 
 .galeria img{
     width: 100%;
+    transition: all .4s ease-in; 
+}
+
+.galeria img:hover{
+    cursor:pointer;
+    transform: scale(1.1);
 }
 
 /*SECTION DREAM HOUSE*/
@@ -295,10 +306,22 @@ section#icones .container{
     line-height: 1.5;
 }
 
+.modal{
+ background-color: rgba(0, 0, 0, .6)
+}
 
+.modal-header {
+    padding: 1.5rem 1rem 1rem 1rem !important;
+}
 
-
-
+.modal-content i {
+    cursor:pointer;
+    right: 10px;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    font-size: 37px;
+}
 
 
 @media(min-width: 992px) and (max-width: 1440px){

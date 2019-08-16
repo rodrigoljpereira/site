@@ -8,6 +8,19 @@
  * Copyright (c) 2019 Daniel Eden
  */
 
+ .delay-1 {
+  animation-delay: .25s;
+  }
+  .delay-2 {
+  animation-delay: .5s;
+  }
+  .delay-3 {
+  animation-delay: .75s;
+  }
+  .delay-4 {
+  animation-delay: 1s;
+  }
+
 @-webkit-keyframes bounce {
   from,
   20%,
